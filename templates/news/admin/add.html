@@ -1,0 +1,44 @@
+<div class="blocks">
+	<div class="column">
+		<div class=" box">
+			<div class="detals">
+				<h1 class="page-title">{{page.title}}</h1>
+				<form enctype="multipart/form-data" name="addNews" ng-submit="newsList.add( addNews, data).upload()">
+					<span class="form-label">Заголовок <small>(не менее 6 символов)</small>:</span>			
+					<input required ng-model="data.title" class="title" name="title">
+					<span class="form-label">Теги:</span>
+					<div required input-tags="tags" class="title tags" style="margin-bottom:10px"></div>
+					
+					<span class="form-label">Описание:</span>	
+						<div class="edit" text-angular="text-angular" name="htmlcontent" ta-toolbar="[
+								['h2', 'h3', 'h4', 'h5', 'h6', 'p', 'quote'],
+								['bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo'],
+								['justifyLeft', 'justifyCenter', 'justifyRight'],
+								['insertImage','insertLink', 'insertVideo', 'wordcount', 'charcount']
+						]" ng-model="data.description" ta-disabled='false'></div>
+						<textarea required name="description" class="description" style="display: none;" ng-model="data.description"></textarea>
+
+					<div class="afterAndBefore">
+						<div ngf-select class="file-before {{(data.images.right && data.images.left == undefined ? 'error' : '')}}" ng-required="(data.images.right && data.images.left == undefined ? true : false)" type="file" ng-model="data.images.left" name="leftF" accept="image/*" ngf-max-size="80MB">{{(data.images.left.name ? data.images.left.name : 'Файл не загружен')}}</div>
+						 
+						<div class="file-after {{(data.images.left && data.images.right == undefined ? 'error' : '')}}" ngf-select ng-required="(data.images.left && data.images.right == undefined ? true : false)" type="file" ng-model="data.images.right" name="rightF" accept="image/*" ngf-max-size="80MB">{{(data.images.right.name ? data.images.right.name : 'Файл не загружен')}}</div>
+					</div>
+
+					<div class="dropbox">
+						<div ng-repeat="i in data.images.all" class="images">
+							<span class="progress" ng-show="i.progress >= 0">
+				 				<div style="width:100%" class="ng-binding">100%</div>
+							</span>
+							<div class="close" ng-click="data = newsList.add(false, data).remove($index)"></div>
+							<div ngf-thumbnail="i" ngf-size="{width: 100, height: 100, quality: 0.9}" ngf-as-background="true" class="thumb file"></div>
+						</div>
+						<div ngf-drop multiple ng-init="data.images.all = []" type="file" ngf-select="data = newsList.add($files, data).push()" name="file" accept="image/*" ngf-max-size="80MB">
+							<div class="loadImages" ng-show="(data.images.all.length != 0 ? false : true)">Загрузить изображения</div>
+						</div>
+					</div>
+					<button ng-disabled="(data.images.all.length != 0 && addNews.$valid ? false : true)" type="submit">Опубликовать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

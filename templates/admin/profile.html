@@ -1,0 +1,88 @@
+<div class="blocks">
+		<form name="page.about.form" ng-submit="page.about.update()">
+		<div class="column one">
+				<div class="box">
+				<div class="name" style="
+			    padding: 13px;
+    font-weight: 500;
+        font-size: 1.05em;">{{page.title}}</div>
+				<div class="upload" ngf-select ng-model="page.about.getData.ava" style="position: relative; margin-bottom: 7px;" type="file" accept="image/*" ngf-max-size="80MB">
+				
+					<img class="poster" style="display: block" alt="" ngf-thumbnail="page.about.getData.ava" ngf-size="{ quality: 1}">
+					<button class="file-upload" style="
+					      width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 1.15em;
+    font-weight: 400;
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.62);
+    height: 24px;
+					">Смена фотографии</button>
+				</div>
+
+				<div class="detals" style="display:block; padding-right: 10px">
+					<div style="width: 100%; margin-top:20px" class="placeholder disabled">
+						<input type="email" required="false" value="dzinecker@mail.ru" disabled="disabled"/>
+						<label class="type" for="email">Ваша электронная почта</label>
+					</div>
+					<button type="submit" ng-disabled="page.about.getData.ava.name == undefined" ng-click="page.about.getData.submit = 'ava'" name="ava" class="submit success" style="float: none">Сохранить</button>
+				</div>
+
+					</div>
+		</div>
+		<div class="column two">
+		
+
+			<div class="box">
+	<div class="name" style="
+			    padding: 13px;
+    font-weight: 500;
+        font-size: 1.05em;
+            border-bottom: solid 2px rgba(0, 0, 0, 0.05);">Смена пароля</div>
+				<div class="detals" style="padding-right: 20px">
+				
+					<div style="width: 100%; margin-top:17px;" class="placeholder {{(page.about.getData.old_password != '' && page.about.getData.old_password != undefined ? 'valid' : (page.about.getData.password != '' && page.about.getData.password != undefined || page.about.getData.password_confirmed != '' && page.about.getData.password_confirmed != undefined ? 'invalid' : ''))}}">
+						<input name="old_password" type="password" ng-model="page.about.getData.old_password" style="border-bottom: 1px solid rgba(8, 8, 8, 0.25);" />
+						<label class="type" for="email">Ваш прежний пароль</label>
+					</div>
+					
+					<div style="width: 100%; margin-top:35px;" class="placeholder {{(page.about.getData.password != '' && page.about.getData.password != undefined ? (page.about.getData.password_confirmed != '' && page.about.getData.password_confirmed != undefined ? (page.about.form.password_confirmed.$viewValue == page.about.form.password.$viewValue ? 'valid' : 'invalid') : 'valid') : (page.about.getData.password_confirmed != '' && page.about.getData.password_confirmed != undefined ? 'invalid' : ''))}}">
+						<input name="password" type="password" ng-model="page.about.getData.password" style="border-bottom: 1px solid rgba(8, 8, 8, 0.25);" />
+						<label class="type" for="password">Ваш новый пароль</label>
+					</div>
+	
+					<div style="width: 100%; margin-top:35px;" class="placeholder {{(page.about.getData.password_confirmed != '' && page.about.getData.password_confirmed != undefined ? (page.about.form.password_confirmed.$viewValue == page.about.form.password.$viewValue ? 'valid' : 'invalid') : '')}}">
+						<input name="password_confirmed" type="password" ng-model="page.about.getData.password_confirmed" style="border-bottom: 1px solid rgba(8, 8, 8, 0.25);" />
+						<label class="type" for="passowrd_confirmed">Повтор нового пароль</label>
+					</div>
+
+			<button type="submit" ng-disabled="page.about.form.password.$viewValue != '' && page.about.form.password.$viewValue != undefined && page.about.form.old_password.$viewValue != '' && page.about.form.old_password.$viewValue != undefined && page.about.form.password_confirmed.$viewValue != '' && page.about.form.password_confirmed.$viewValue != undefined && page.about.form.password_confirmed.$viewValue == page.about.form.password.$viewValue ? '' : true" ng-click="page.about.getData.submit = 'password'" class="submit success">Сохранить</button>
+				</div>
+
+			</div>
+						<div class="box">
+				<div class="name" style="
+			    padding: 13px;
+    font-weight: 500;
+        font-size: 1.05em;
+            border-bottom: solid 2px rgba(0, 0, 0, 0.05);">Сменить информацию о себе</div>
+			
+				<div class="detals">
+						<div class="edit" text-angular="text-angular" name="htmlcontent" ta-toolbar="[
+								['h2', 'h3', 'h4', 'h5', 'h6', 'p', 'quote'],
+								['bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo'],
+								['justifyLeft', 'justifyCenter', 'justifyRight'],
+								['insertImage','insertLink', 'insertVideo', 'wordcount', 'charcount']
+						]" ng-model="page.about.getData.description" ta-disabled='false'>
+						</div>
+						<textarea required="false" name="description" class="description" style="display: none;" ng-model="page.about.getData.description"></textarea>
+							<button type="submit" ng-click="page.about.getData.submit = 'description'" class="submit success">Сохранить</button>
+				</div>
+
+			</div>
+		</div>
+	</form>
+</div>

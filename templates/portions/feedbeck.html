@@ -1,0 +1,22 @@
+<div class="box window">
+	<div class="header">
+		<div class="title">Обратная связь</div>
+		<div class="close" ng-click="feedBeck_display.close = false"></div>
+	</div>
+	<form name="feedBeck.form" ng-submit="feedBeck_display.close = feedBeck.submit()">
+		<div class="placeholder {{(feedBeck.form.name.$viewValue != undefined && feedBeck.form.name.$viewValue != '' ? (feedBeck.form.name.$valid == false ? 'invalid ' : 'valid ') : '')}}">
+			<input ng-model="feedBeck.data.name" name="name" type="text" required id="name" />
+			<label class="type" for="name">Имя</label>
+		</div>
+		<div class="placeholder {{(feedBeck.form.email.$viewValue != undefined && feedBeck.form.email.$viewValue != '' ? ( feedBeck.form.email.$valid == false ? 'invalid' : 'valid') : '')}}">
+			<input required name="email" type="email" ng-model="feedBeck.data.email" />
+			<label class="type" for="email">Почта</label>
+		</div>
+		<label class="label-textarea">
+			<span class="type">Teкст сообщения</span>
+			<textarea name="text" required ng-model="feedBeck.data.text" id="" cols="30" rows="12"></textarea>
+		</label>
+		<button type="submit" name="Submit" ng-disabled="feedBeck.form.$invalid" ng-class="feedBeck.form.$invalid ? 'disabled' : ''">Отправить</button>
+		<div type="" class="close-submit" ng-click="feedBeck_display.close = false">Закрыть</div>
+	</form>
+</div>
