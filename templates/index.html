@@ -1,0 +1,15 @@
+<div infinite-scroll="newsList.getList()" infinite-scroll-distance="2" class="blocks" infinite-scroll-disabled="newsList.busy">
+	<div masonry class="column">
+		<div ng-repeat="list in newsList.items" class="masonry-brick box">
+			<img class="poster" ng-src="{{ list.paths[0].path }}" ng-click="onload.timePage('/news/detail/'+list.id)"  alt="">
+			<div class="detals">
+				<div class="title">{{list.title}}</div>
+				<div class="data">{{list.created_at}}</div>
+			</div>
+			<div class="description">
+				<p>{{list.description}}</p>
+			</div><a ng-href ng-click="onload.timePage('/news/detail/'+list.id)" class="more">Далее</a>
+		</div>
+	</div>
+	<div class="feedbeck only-sm" ng-click="feedBeck_display.close = true">Обратная связь</div>
+</div>

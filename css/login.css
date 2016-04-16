@@ -1,0 +1,1052 @@
+.login * {
+	box-sizing: border-box;
+}
+
+.login #main {
+	margin-left: 0;
+}
+
+.login #main #content {
+	display: none;
+}
+
+.login body {
+ 	font-weight: 300;
+ 	font-size: 14px;
+ 	line-height: 1.4;
+ 	color: #212121;
+ 	-webkit-font-smoothing: antialiased;
+ 	text-rendering: optimizeLegibility;
+ }
+ /* -- Main style ------------------------------------ */
+ 
+ .login .btn {
+ 	font-size: 14px;
+ 	font-weight: 400;
+ 	line-height: 1.1;
+ 	text-transform: uppercase;
+ 	letter-spacing: inherit;
+ 	color: rgba(255, 255, 255, 0.87);
+ }
+ .login .btn-default,
+ .login .btn-link {
+ 	color: rgba(0, 0, 0, 0.87);
+ }
+ /* -- Buttons style ------------------------------------ */
+ 
+ .login .btn {
+ 	width: 100%;
+ 	outline: 0;
+ 	outline-offset: 0;
+ 	border: 0;
+ 	border-radius: 2px;
+ 	transition: all 0.15s ease-in-out;
+ 	-o-transition: all 0.15s ease-in-out;
+ 	-moz-transition: all 0.15s ease-in-out;
+ 	-webkit-transition: all 0.15s ease-in-out;
+ }
+ .login .btn:focus,
+ .login .btn:active,
+ .login .btn.active,
+ .login .btn:active:focus,
+ .login .btn.active:focus {
+ 	outline: 0;
+ 	outline-offset: 0;
+ 	box-shadow: none;
+ 	-moz-box-shadow: none;
+ 	-webkit-box-shadow: none;
+ }
+ /* -- Buttons types -------------------------------- */
+ 
+ .login .btn-raised {
+ 	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+ 	-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+ 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+ }
+ .login .btn-raised:active,
+ .login .btn-raised.active,
+ .login .btn-raised:active:focus,
+ .login .btn-raised.active:focus {
+ 	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ 	-moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+ .login .btn-raised:focus {
+ 	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ 	-moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+ .login .btn.btn-circle {
+ 	padding: 0;
+ 	border-radius: 50%;
+ }
+ /* -- Buttons colors -------------------------------- */
+ 
+ .login .btn-default,
+ .login .dropdown-toggle.btn-default {
+ 	background-color: #ffffff;
+ }
+ .login .btn-default:hover,
+ .login .dropdown-toggle.btn-default:hover {
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-default:active,
+ .login .dropdown-toggle.btn-default:active,
+ .login .btn-default.active,
+ .login .dropdown-toggle.btn-default.active {
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-default:focus,
+ .login .dropdown-toggle.btn-default:focus {
+ 	background-color: #cccccc;
+ }
+ .login .btn-default:disabled,
+ .login .dropdown-toggle.btn-default:disabled,
+ .login .btn-default.disabled,
+ .login .dropdown-toggle.btn-default.disabled,
+ .login .btn-default[disabled],
+ .login .dropdown-toggle.btn-default[disabled] {
+ 	background-color: #b3b3b3;
+ }
+ .login .btn-default .ink,
+ .login .dropdown-toggle.btn-default .ink {
+ 	background-color: #b8b8b8;
+ }
+ .login .btn-flat.btn-default {
+ 	color: #212121;
+ 	background-color: transparent;
+ }
+ .login .btn-flat.btn-default:hover {
+ 	color: #141414;
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-flat.btn-default:active,
+ .login .btn-flat.btn-default.active {
+ 	color: #020202;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-default:focus {
+ 	color: #000000;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-default .ink {
+ 	background-color: #808080;
+ }
+ .login .btn-primary,
+ .login .dropdown-toggle.btn-primary {
+ 	background-color: #5677fc;
+ }
+ .login .btn-primary:hover,
+ .login .dropdown-toggle.btn-primary:hover {
+ 	background-color: #4e6cef;
+ }
+ .login .btn-primary:active,
+ .login .dropdown-toggle.btn-primary:active,
+ .login .btn-primary.active,
+ .login .dropdown-toggle.btn-primary.active {
+ 	background-color: #4e6cef;
+ }
+ .login .btn-primary:focus,
+ .login .dropdown-toggle.btn-primary:focus {
+ 	background-color: #455ede;
+ }
+ .login .btn-primary:disabled,
+ .login .dropdown-toggle.btn-primary:disabled,
+ .login .btn-primary.disabled,
+ .login .dropdown-toggle.btn-primary.disabled,
+ .login .btn-primary[disabled],
+ .login .dropdown-toggle.btn-primary[disabled] {
+ 	background-color: #b3b3b3;
+ }
+ .login .btn-primary .ink,
+ .login .dropdown-toggle.btn-primary .ink {
+ 	background-color: #3b50ce;
+ }
+ .login .btn-flat.btn-primary {
+ 	color: #5677fc;
+ 	background-color: transparent;
+ }
+ .login .btn-flat.btn-primary:hover {
+ 	color: #4e6cef;
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-flat.btn-primary:active,
+ .login .btn-flat.btn-primary.active {
+ 	color: #455ede;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-primary:focus {
+ 	color: #3b50ce;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-primary .ink {
+ 	background-color: #808080;
+ }
+ .login .btn-success,
+ .login .dropdown-toggle.btn-success {
+ 	background-color: #259b24;
+ }
+ .login .btn-success:hover,
+ .login .dropdown-toggle.btn-success:hover {
+ 	background-color: #0a8f08;
+ }
+ .login .btn-success:active,
+ .login .dropdown-toggle.btn-success:active,
+ .login .btn-success.active,
+ .login .dropdown-toggle.btn-success.active {
+ 	background-color: #0a8f08;
+ }
+ .login .btn-success:focus,
+ .login .dropdown-toggle.btn-success:focus {
+ 	background-color: #0a7e07;
+ }
+ .login .btn-success:disabled,
+ .login .dropdown-toggle.btn-success:disabled,
+ .login .btn-success.disabled,
+ .login .dropdown-toggle.btn-success.disabled,
+ .login .btn-success[disabled],
+ .login .dropdown-toggle.btn-success[disabled] {
+ 	background-color: #b3b3b3;
+ }
+ .login .btn-success .ink,
+ .login .dropdown-toggle.btn-success .ink {
+ 	background-color: #056f00;
+ }
+ .login .btn-flat.btn-success {
+ 	color: #259b24;
+ 	background-color: transparent;
+ }
+ .login .btn-flat.btn-success:hover {
+ 	color: #0a8f08;
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-flat.btn-success:active,
+ .login .btn-flat.btn-success.active {
+ 	color: #0a7e07;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-success:focus {
+ 	color: #056f00;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-success .ink {
+ 	background-color: #808080;
+ }
+ .login .btn-info,
+ .login .dropdown-toggle.btn-info {
+ 	background-color: #03a9f4;
+ }
+ .login .btn-info:hover,
+ .login .dropdown-toggle.btn-info:hover {
+ 	background-color: #039be5;
+ }
+ .login .btn-info:active,
+ .login .dropdown-toggle.btn-info:active,
+ .login .btn-info.active,
+ .login .dropdown-toggle.btn-info.active {
+ 	background-color: #039be5;
+ }
+ .login .btn-info:focus,
+ .login .dropdown-toggle.btn-info:focus {
+ 	background-color: #0288d1;
+ }
+ .login .btn-info:disabled,
+ .login .dropdown-toggle.btn-info:disabled,
+ .login .btn-info.disabled,
+ .login .dropdown-toggle.btn-info.disabled,
+ .login .btn-info[disabled],
+ .login .dropdown-toggle.btn-info[disabled] {
+ 	background-color: #b3b3b3;
+ }
+ .login .btn-info .ink,
+ .login .dropdown-toggle.btn-info .ink {
+ 	background-color: #0277bd;
+ }
+ .login .btn-flat.btn-info {
+ 	color: #03a9f4;
+ 	background-color: transparent;
+ }
+ .login .btn-flat.btn-info:hover {
+ 	color: #039be5;
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-flat.btn-info:active,
+ .login .btn-flat.btn-info.active {
+ 	color: #0288d1;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-info:focus {
+ 	color: #0277bd;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-info .ink {
+ 	background-color: #808080;
+ }
+ .login .btn-warning,
+ .login .dropdown-toggle.btn-warning {
+ 	background-color: #ffc107;
+ }
+ .login .btn-warning:hover,
+ .login .dropdown-toggle.btn-warning:hover {
+ 	background-color: #ffb300;
+ }
+ .login .btn-warning:active,
+ .login .dropdown-toggle.btn-warning:active,
+ .login .btn-warning.active,
+ .login .dropdown-toggle.btn-warning.active {
+ 	background-color: #ffb300;
+ }
+ .login .btn-warning:focus,
+ .login .dropdown-toggle.btn-warning:focus {
+ 	background-color: #ffa000;
+ }
+ .login .btn-warning:disabled,
+ .login .dropdown-toggle.btn-warning:disabled,
+ .login .btn-warning.disabled,
+ .login .dropdown-toggle.btn-warning.disabled,
+ .login .btn-warning[disabled],
+ .login .dropdown-toggle.btn-warning[disabled] {
+ 	background-color: #b3b3b3;
+ }
+ .login .btn-warning .ink,
+ .login .dropdown-toggle.btn-warning .ink {
+ 	background-color: #ff8f00;
+ }
+ .login .btn-flat.btn-warning {
+ 	color: #ffc107;
+ 	background-color: transparent;
+ }
+ .login .btn-flat.btn-warning:hover {
+ 	color: #ffb300;
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-flat.btn-warning:active,
+ .login .btn-flat.btn-warning.active {
+ 	color: #ffa000;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-warning:focus {
+ 	color: #ff8f00;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-warning .ink {
+ 	background-color: #808080;
+ }
+ .login .btn-danger,
+ .login .dropdown-toggle.btn-danger {
+ 	background-color: #ff5722;
+ }
+ .login .btn-danger:hover,
+ .login .dropdown-toggle.btn-danger:hover {
+ 	background-color: #f4511e;
+ }
+ .login .btn-danger:active,
+ .login .dropdown-toggle.btn-danger:active,
+ .login .btn-danger.active,
+ .login .dropdown-toggle.btn-danger.active {
+ 	background-color: #f4511e;
+ }
+ .login .btn-danger:focus,
+ .login .dropdown-toggle.btn-danger:focus {
+ 	background-color: #e64a19;
+ }
+ .login .btn-danger:disabled,
+ .login .dropdown-toggle.btn-danger:disabled,
+ .login .btn-danger.disabled,
+ .login .dropdown-toggle.btn-danger.disabled,
+ .login .btn-danger[disabled],
+ .login .dropdown-toggle.btn-danger[disabled] {
+ 	background-color: #b3b3b3;
+ }
+ .login .btn-danger .ink,
+ .login .dropdown-toggle.btn-danger .ink {
+ 	background-color: #d84315;
+ }
+ .login .btn-flat.btn-danger {
+ 	color: #ff5722;
+ 	background-color: transparent;
+ }
+ .login .btn-flat.btn-danger:hover {
+ 	color: #f4511e;
+ 	background-color: #e5e5e5;
+ }
+ .login .btn-flat.btn-danger:active,
+ .login .btn-flat.btn-danger.active {
+ 	color: #e64a19;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-danger:focus {
+ 	color: #d84315;
+ 	background-color: #cccccc;
+ }
+ .login .btn-flat.btn-danger .ink {
+ 	background-color: #808080;
+ }
+ /* -- Buttons sizes -------------------------------- */
+ 
+ .login .btn {
+ 	min-width: 88px;
+ 	padding: 10px 14px;
+ }
+ .login .btn-lg,
+ .login .btn-group-lg > .btn {
+ 	min-width: 122px;
+ 	padding: 10px 16px;
+ 	font-size: 18px;
+ 	line-height: 1.3;
+ }
+ .login .btn-sm,
+ .login .btn-group-sm > .btn {
+ 	min-width: 64px;
+ 	padding: 4px 12px;
+ 	font-size: 12px;
+ 	line-height: 1.5;
+ }
+ .login .btn-xs,
+ .login .btn-group-xs > .btn {
+ 	min-width: 46px;
+ 	padding: 2px 10px;
+ 	font-size: 10px;
+ 	line-height: 1.5;
+ }
+ .login .btn-circle {
+ 	width: 56px;
+ 	height: 56px;
+ 	min-width: 56px;
+ }
+ .login .btn-circle span {
+ 	line-height: 56px;
+ }
+ .login .btn-circle.btn-lg {
+ 	width: 78px;
+ 	height: 78px;
+ 	min-width: 78px;
+ }
+ .login .btn-circle.btn-lg span {
+ 	line-height: 78px;
+ }
+ .login .btn-circle.btn-sm {
+ 	width: 40px;
+ 	height: 40px;
+ 	min-width: 40px;
+ }
+ .login .btn-circle.btn-sm span {
+ 	line-height: 40px;
+ }
+ .login .btn-circle.btn-xs {
+ 	width: 30px;
+ 	height: 30px;
+ 	min-width: 30px;
+ }
+ .login .btn-circle.btn-xs span {
+ 	line-height: 30px;
+ }
+ /*-- Button groups --------------------------------- */
+ 
+ .login .btn-group .btn {
+ 	border-radius: 2px;
+ }
+ .login .btn-group.open .dropdown-toggle {
+ 	outline: 0;
+ 	outline-offset: 0;
+ 	box-shadow: none;
+ 	-moz-box-shadow: none;
+ 	-webkit-box-shadow: none;
+ }
+ .login .btn-group .btn + .btn,
+ .login .btn-group .btn + .btn-group,
+ .login .btn-group .btn-group + .btn,
+ .login .btn-group .btn-group + .btn-group {
+ 	margin-left: 0;
+ }
+ .login .btn-group > .btn:hover,
+ .login .btn-group-vertical > .btn:hover {
+ 	z-index: 0;
+ }
+ .login .btn-group > .btn:focus:hover,
+ .login .btn-group-vertical > .btn:focus:hover,
+ .login .btn-group > .btn:active:hover,
+ .login .btn-group-vertical > .btn:active:hover,
+ .login .btn-group > .btn.active:hover,
+ .login .btn-group-vertical > .btn.active:hover {
+ 	z-index: 2;
+ }
+ /* -- Ripple effect -------------------------------- */
+ 
+ .login .ripple-effect {
+ 	position: relative;
+ 	overflow: hidden;
+ 	-webkit-transform: translate3d(0, 0, 0);
+ }
+ .login .ink {
+ 	display: block;
+ 	position: absolute;
+ 	pointer-events: none;
+ 	border-radius: 50%;
+ 	-webkit-transform: scale(0);
+ 	-moz-transform: scale(0);
+ 	-ms-transform: scale(0);
+ 	-o-transform: scale(0);
+ 	transform: scale(0);
+ 	background: #fff;
+ 	opacity: 1;
+ }
+ .login .ink.animate {
+ 	-webkit-animation: ripple .5s linear;
+ 	-moz-animation: ripple .5s linear;
+ 	-ms-animation: ripple .5s linear;
+ 	-o-animation: ripple .5s linear;
+ 	animation: ripple .5s linear;
+ }
+ @keyframes ripple {
+ 	100% {
+ 		opacity: 0;
+ 		transform: scale(2.5);
+ 	}
+ }
+ @-webkit-keyframes ripple {
+ 	100% {
+ 		opacity: 0;
+ 		-webkit-transform: scale(2.5);
+ 		transform: scale(2.5);
+ 	}
+ }
+ @-moz-keyframes ripple {
+ 	100% {
+ 		opacity: 0;
+ 		-moz-transform: scale(2.5);
+ 		transform: scale(2.5);
+ 	}
+ }
+ @-ms-keyframes ripple {
+ 	100% {
+ 		opacity: 0;
+ 		-ms-transform: scale(2.5);
+ 		transform: scale(2.5);
+ 	}
+ }
+ @-o-keyframes ripple {
+ 	100% {
+ 		opacity: 0;
+ 		-o-transform: scale(2.5);
+ 		transform: scale(2.5);
+ 	}
+ }
+ /* -- import Bootstrap v3 --------------------------- */
+ /* -- import Bootstrap docs ------------------------- */
+ /* -- import Roboto Font ---------------------------- */
+ /* -- Body style ------------------------------------ */
+ /* -- Input styles ---------------------------------- */
+ 
+ .login .form-group {
+ 	position: relative;
+ 	margin-top: 35px;
+ 	margin-bottom: 20px;
+ }
+ .login .input-group {
+ 	position: relative;
+ }
+ .login .form-control {
+ 	display: block;
+ 	height: 36px;
+ 	width: 100%;
+ 	border: none;
+ 	border-radius: 0 !important;
+ 	font-size: 16px;
+ 	font-weight: 300;
+ 	padding: 0;
+ 	background-color: transparent;
+ 	box-shadow: none;
+ 	border-bottom: 1px solid #757575;
+ }
+ .login .input-group .form-control {
+ 	position: relative;
+ 	z-index: inherit;
+ 	float: inherit;
+ 	width: 100%;
+ 	margin-bottom: 0;
+ 	transition: 0.3s ease all;
+ 	-moz-transition: 0.3s ease all;
+ 	-webkit-transition: 0.3s ease all;
+ }
+ .login .form-control:focus {
+ 	border-color: #757575;
+ 	outline: none;
+ 	box-shadow: none;
+ }
+ /* -- label styles ---------------------------------- */
+ 
+ .login label {
+ 	position: absolute;
+ 	top: -18px;
+ 	color: #999;
+ 	font-size: 12px;
+ 	font-weight: 300;
+ 	transition: 0.2s ease all;
+ 	-moz-transition: 0.2s ease all;
+ 	-webkit-transition: 0.2s ease all;
+ }
+ .login .form-horizontal .control-label {
+ 	position: relative;
+ 	top: 0;
+ 	margin-bottom: 0;
+ }
+ @media (min-width: 768px) {
+ 	.login .form-horizontal .control-label {
+ 		font-size: 16px;
+ 	}
+ }
+ .login .float-label {
+ 	left: 0;
+ 	top: 7px;
+ 	font-size: 16px;
+ 	pointer-events: none;
+ }
+ /* active state */
+ 
+ .login .form-control:focus ~ .float-label,
+ .login .form-control.to ~ .float-label {
+ 	top: -18px;
+ 	font-size: 12px;
+ }
+ .login .form-control.to:invalid,
+ .form-control.to.ng-invalid-maxlength {
+ 	border-color: #e23232 !important;
+ }
+ .login .form-control.to:invalid ~ .float-label,
+ .form-control.to.ng-invalid-maxlength ~ .float-label {
+ 	color: #e23232;
+ }
+ /* input colors ---- */
+ 
+ .login .form-control:focus ~ label {
+ 	color: #03a9f4;
+ }
+ .login .form-control:focus ~ .form-bar:before,
+ .login .form-control:focus ~ .form-bar:after {
+ 	background: #03a9f4;
+ }
+ /* help-block */
+ 
+ .login .form-group .help-block {
+ 	position: absolute;
+ }
+ .login .help-block {
+ 	color: #bdbdbd;
+ 	font-size: 12px;
+ 	font-weight: 300;
+ }
+ /* input addon ---*/
+ 
+ .login .input-group-addon {
+ 	border: none;
+ 	background: transparent;
+ }
+ /* ------  inline ----*/
+ 
+ .login .input-group-addon,
+ .login .form-inline .input-group {
+ 	display: table-cell;
+ }
+ .login .input-group-addon,
+ .login .input-group-btn {
+ 	width: inherit;
+ }
+ .login .input-group {
+ 	width: 100%;
+ }
+ @media (min-width: 768px) {
+ 	.login .form-inline .form-group {
+ 		margin-top: 16px;
+ 	}
+ 	.login .input-group-btn,
+ 	.login .input-group .form-control,
+ 	.login .input-group-addon,
+ 	.login .form-inline .input-group {
+ 		display: inline-block;
+ 	}
+ 	.login .input-group {
+ 		width: auto;
+ 	}
+ }
+ /* -- bar styles -------------------------------------- */
+ 
+ .login .form-bar {
+ 	position: relative;
+ 	display: block;
+ 	width: 100%;
+ }
+ .login .form-bar:before,
+ .login .form-bar:after {
+ 	content: '';
+ 	height: 1px;
+ 	width: 0;
+ 	bottom: 0;
+ 	position: absolute;
+ 	transition: 0.3s ease all;
+ 	-moz-transition: 0.3s ease all;
+ 	-webkit-transition: 0.3s ease all;
+ }
+ .login .form-bar:before {
+ 	left: 50%;
+ }
+ .login .form-bar:after {
+ 	right: 50%;
+ }
+ /* active state */
+ 
+ .login .form-control:focus ~ .form-bar:before,
+ .login .form-control:focus ~ .form-bar:after {
+ 	width: 50%;
+ }
+ /* -- highlighter styles ------------------------------ */
+ 
+ .login .form-highlight {
+ 	position: absolute;
+ 	height: 60%;
+ 	width: 60px;
+ 	top: 25%;
+ 	left: 0;
+ 	pointer-events: none;
+ 	opacity: 0.4;
+ }
+ /* active state */
+ 
+ .login .form-control:focus ~ .form-highlight {
+ 	-webkit-animation: inputHighlighter 0.3s ease;
+ 	-moz-animation: inputHighlighter 0.3s ease;
+ 	animation: inputHighlighter 0.3s ease;
+ }
+ /* -- highlighter animation --------------------------- */
+ 
+ @-webkit-keyframes inputHighlighter {
+ 	from {
+ 		background: #5264AE;
+ 	}
+ 	to {
+ 		width: 0;
+ 		background: transparent;
+ 	}
+ }
+ @-moz-keyframes inputHighlighter {
+ 	from {
+ 		background: #5264AE;
+ 	}
+ 	to {
+ 		width: 0;
+ 		background: transparent;
+ 	}
+ }
+ @keyframes inputHighlighter {
+ 	from {
+ 		background: #5264AE;
+ 	}
+ 	to {
+ 		width: 0;
+ 		background: transparent;
+ 	}
+ }
+ /*-- Checkbox --------------------------- */
+ /* 
+ * Core styles required for the checkboxes.
+ * @author Jason Mayes 2014, www.jasonmayes.com
+*/
+ 
+ .login .form-group.checkbox {
+ 	margin-top: 20px;
+ }
+ .login .checkbox input[type='checkbox'] {
+ 	height: 0;
+ 	width: 0;
+ 	opacity: 0;
+ }
+ .login .checkbox label {
+ 	font-size: 14px;
+ 	font-weight: 300;
+ 	line-height: 1;
+ 	display: inline-block;
+ 	overflow: hidden;
+ 	position: relative;
+ 	top: 10px;
+ 	padding-left: 0;
+ }
+ .login .checkbox .chk-span {
+ 	top: 0;
+ 	border: 1px solid #5a5a5a;
+ 	color: #1d1d1d;
+ 	cursor: pointer;
+ 	display: inline-block;
+ 	float: left;
+ 	height: 14px;
+ 	margin: 0 14px 14px 1px;
+ 	outline-color: #eaeaea;
+ 	padding: 0;
+ 	position: relative;
+ 	width: 14px;
+ 	-webkit-transition: all 0.2s ease-in-out;
+ 	-moz-transition: all 0.2s ease-in-out;
+ 	transition: all 0.2s ease-in-out;
+ 	z-index: 1;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+ .login .checkbox .chk-span.checked {
+ 	top: -2px;
+ 	border-left: 2px solid #03a9f4;
+ 	border-bottom: 4px solid #03a9f4;
+ 	border-top: 1px solid rgba(0, 0, 0, 0);
+ 	border-right: 1px solid rgba(0, 0, 0, 0);
+ 	-webkit-transform: rotate(-45deg) scaleY(0.5);
+ 	-moz-transform: rotate(-45deg) scaleY(0.5);
+ 	-ms-transform: rotate(-45deg) scaleY(0.5);
+ 	-o-transform: rotate(-45deg) scaleY(0.5);
+ 	transform: rotate(-45deg) scaleY(0.5);
+ }
+ .login .checkbox .chk-span.checked {
+ 	border-left-color: #03a9f4;
+ 	border-bottom-color: #03a9f4;
+ }
+ .login .checkbox input[type='checkbox']:focus ~ label {
+ 	color: #03a9f4;
+ }
+ .login .checkbox input[type='checkbox']:focus ~ label .chk-span {
+ 	border-color: #03a9f4;
+ }
+ .login .checkbox input[type='checkbox']:focus ~ label .chk-span.checked {
+ 	border-left-color: #03a9f4;
+ 	border-bottom-color: #03a9f4;
+ 	border-top: 1px solid rgba(0, 0, 0, 0);
+ 	border-right: 1px solid rgba(0, 0, 0, 0);
+ }
+ @media (min-width: 768px) {
+ 	.login .form-inline .radio label,
+ 	.login .form-inline .checkbox label {
+ 		padding-left: 5px;
+ 	}
+ }
+ .login .form-control-static {
+ 	font-size: 16px;
+ }
+ .login .form-control[disabled],
+ .login .form-control[readonly],
+ .login fieldset[disabled] .form-control {
+ 	background-color: transparent;
+ 	border-bottom-style: dashed;
+ }
+ #focusedInput {
+ 	border-color: #ccc;
+ 	border-color: rgba(82, 168, 236, 0.8);
+ 	outline: 0;
+ 	box-shadow: none;
+ }
+ /* -- import Bootstrap v3 ----------------------------- */
+ /* -- import Roboto Font ------------------------------ */
+ /* -- body styles ------------------------------------- */
+ 
+ .login body {
+ 	background: #EEE;
+ }
+ /* -- button styles ------------------------------------- */
+ /*-- signin-card animation ---------------------------------------- */
+ 
+ .login .signin-card {
+ 	-webkit-animation: cardEnter 0.75s ease-in-out 0.5s;
+ 	animation: cardEnter 0.75s ease-in-out 0.5s;
+ 	-webkit-animation-fill-mode: both;
+ 	animation-fill-mode: both;
+ 	opacity: 0;
+ 	-webkit-box-sizing: border-box;
+ 	*/ -moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+ /* -- login paper styles ------------------------------ */
+ 
+ .login .signin-card {
+ 	max-width: 350px;
+ 	border-radius: 2px;
+ 	margin: 20px auto;
+ 	padding: 20px;
+ 	background-color: #fff;
+ 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+ }
+ .login .signin-card input[type=checkbox] {
+ 	position: absolute;
+ 	margin-top: 4px\9;
+ 	margin-left: -20px;
+ }
+ .login .signin-card input[type=checkbox] {
+ 	margin: 4px 0 0;
+ 	margin-top: 1px\9;
+ 	line-height: normal;
+ }
+ .login .signin-card input[type=checkbox] {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	padding: 0;
+ }
+ .login .signin-card .logo-image,
+ .login .signin-card h1,
+ .login .signin-card p {
+ 	text-align: center;
+ }
+ /* -- font styles ------------------------------------- */
+ 
+ .login .display1 {
+ 	font-size: 28px;
+ 	font-weight: 100;
+ 	line-height: 1.2;
+ 	color: #757575;
+ 	text-transform: inherit;
+ 	letter-spacing: inherit;
+ }
+ .login .subhead {
+ 	font-size: 16px;
+ 	font-weight: 300;
+ 	line-height: 1.1;
+ 	color: #212121;
+ 	text-transform: inherit;
+ 	letter-spacing: inherit;
+ }
+ @media (min-width: 1200px) .login .container {
+ 	width: 1170px;
+ }
+ @media (min-width: 992px) .login .container {
+ 	width: 970px;
+ }
+ @media (min-width: 768px) .login .container {
+ 	width: 750px;
+ }
+ .login .container {
+ 	margin-top: 120px;
+ 	padding-right: 15px;
+ 	padding-left: 15px;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
+ .login .btn-group-vertical>.btn-group:after,
+ .login .btn-group-vertical>.btn-group:before,
+ .login .btn-toolbar:after,
+ .login .btn-toolbar:before,
+ .login .clearfix:after,
+ .login .clearfix:before,
+ .login .container-fluid:after,
+ .login .container-fluid:before,
+ .login .container:after,
+ .login .container:before,
+ .login .dl-horizontal dd:after,
+ .login .dl-horizontal dd:before,
+ .login .form-horizontal .form-group:after,
+ .login .form-horizontal .form-group:before,
+ .login .modal-footer:after,
+ .login .modal-footer:before,
+ .login .modal-header:after,
+ .login .modal-header:before,
+ .login .nav:after,
+ .login .nav:before,
+ .login .navbar-collapse:after,
+ .login .navbar-collapse:before,
+ .login .navbar-.login header:after,
+ .login .navbar-header:before,
+ .login .navbar:after,
+ .login .navbar:before,
+ .login .pager:after,
+ .login .pager:before,
+ .login .panel-body:after,
+ .login .panel-body:before,
+ .login .row:after,
+ .login .row:before {
+ 	display: table;
+ 	content: " ";
+ }
+ /* card animation from Animate.css -------------------- */
+ 
+ @-webkit-keyframes cardEnter {
+ 	0%,
+ 	20%,
+ 	40%,
+ 	60%,
+ 	80%,
+ 	100% {
+ 		-webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ 		transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ 	}
+ 	0% {
+ 		opacity: 0;
+ 		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+ 		-ms-transform: scale3d(0.3, 0.3, 0.3);
+ 		transform: scale3d(0.3, 0.3, 0.3);
+ 	}
+ 	20% {
+ 		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+ 		-ms-transform: scale3d(1.1, 1.1, 1.1);
+ 		transform: scale3d(1.1, 1.1, 1.1);
+ 	}
+ 	40% {
+ 		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+ 		-ms-transform: scale3d(0.9, 0.9, 0.9);
+ 		transform: scale3d(0.9, 0.9, 0.9);
+ 	}
+ 	60% {
+ 		opacity: 1;
+ 		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+ 		-ms-transform: scale3d(1.03, 1.03, 1.03);
+ 		transform: scale3d(1.03, 1.03, 1.03);
+ 	}
+ 	80% {
+ 		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+ 		-ms-transform: scale3d(0.97, 0.97, 0.97);
+ 		transform: scale3d(0.97, 0.97, 0.97);
+ 	}
+ 	100% {
+ 		opacity: 1;
+ 		-webkit-transform: scale3d(1, 1, 1);
+ 		-ms-transform: scale3d(1, 1, 1);
+ 		transform: scale3d(1, 1, 1);
+ 	}
+ }
+ @keyframes cardEnter {
+ 	0%,
+ 	20%,
+ 	40%,
+ 	60%,
+ 	80%,
+ 	100% {
+ 		-webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ 		transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ 	}
+ 	0% {
+ 		opacity: 0;
+ 		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+ 		-ms-transform: scale3d(0.3, 0.3, 0.3);
+ 		transform: scale3d(0.3, 0.3, 0.3);
+ 	}
+ 	20% {
+ 		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+ 		-ms-transform: scale3d(1.1, 1.1, 1.1);
+ 		transform: scale3d(1.1, 1.1, 1.1);
+ 	}
+ 	40% {
+ 		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+ 		-ms-transform: scale3d(0.9, 0.9, 0.9);
+ 		transform: scale3d(0.9, 0.9, 0.9);
+ 	}
+ 	60% {
+ 		opacity: 1;
+ 		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+ 		-ms-transform: scale3d(1.03, 1.03, 1.03);
+ 		transform: scale3d(1.03, 1.03, 1.03);
+ 	}
+ 	80% {
+ 		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+ 		-ms-transform: scale3d(0.97, 0.97, 0.97);
+ 		transform: scale3d(0.97, 0.97, 0.97);
+ 	}
+ 	100% {
+ 		opacity: 1;
+ 		-webkit-transform: scale3d(1, 1, 1);
+ 		-ms-transform: scale3d(1, 1, 1);
+ 		transform: scale3d(1, 1, 1);
+ 	}
+ }
