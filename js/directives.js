@@ -252,7 +252,9 @@ myApp.directive('inputTags', ['$rootScope', '$compile', '$timeout', '$window', f
 
 			$element.bind('drop dragover', function($event){
 				$event.preventDefault();
-			});		
+			});	
+			
+			$scope[$attrs.inputTags] = $scope.inputTags.tags;
 		},
 		
 		link: function(scope, element, attr){
